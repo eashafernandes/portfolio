@@ -9,7 +9,6 @@
 <body> 
     <div class="container">
         <h1>👔 Experience & Projects</h1>
-
         <div class="navbar">
             <ul>
                 <li><a href="../index.html">🏠 Home</a></li>
@@ -18,25 +17,28 @@
                 <li><a href="education.html">🎓 Education</a></li>
             </ul>
         </div>   
-
+        <div class = 'grid'>
         {% for job in experience %}
+            <div class = 'card'>
             {% for positions in job.positions %}
-            <h2>{{ positions.title }} - {{ job.company }}</h2>
-            <p><i>{{ positions.duration }}</i></p>
-            <p>{{ positions.description }}</p>
+                <h2>{{ positions.title }} - {{ job.company }}</h2>
+                <p><i>{{ positions.duration }}</i></p>
+                <p>{{ positions.description }}</p>
 
-            {% if positions.projects %}
-                <h3>💾 Key Projects:</h3>
-                <ul>
-                    {% for project in positions.projects %}
-                        <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+                {% if positions.projects %}
+                    <h3>💾 Key Projects:</h3>
+                    <ul>
+                        {% for project in positions.projects %}
+                            <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
 
-            <hr>
+                <hr>
+            </div>
             {% endfor %}
         {% endfor %}
+        </div>
     </div>
 </body>
 </html>

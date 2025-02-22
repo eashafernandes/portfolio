@@ -11,37 +11,23 @@
     --font-family: 'Inter', sans-serif;
   }
   
-  /* Import Google Font */
+  /* Google Font */
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
   
-  /* General Styles */
+  /* Base Styles */
   body {
     font-family: var(--font-family);
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
   }
   
-  h1, h2, h3 {
-    font-weight: 600;
-    color: var(--text-color);
-  }
-  
-  a {
-    color: var(--pastel-purple);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
   /* Navbar */
   .navbar {
     background: var(--pastel-purple);
-    padding: 15px 20px;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -54,19 +40,16 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    gap: 2rem;
   }
   
-  .navbar ul li {
-    margin-left: 20px;
-  }
-  
-  .navbar ul li a {
+  .navbar a {
     color: var(--text-color);
     font-weight: 600;
     transition: color 0.3s ease;
   }
   
-  .navbar ul li a:hover {
+  .navbar a:hover {
     color: var(--pastel-pink);
   }
   
@@ -74,62 +57,51 @@
   .hero {
     background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
     color: var(--text-color);
-    padding: 150px 20px;
+    padding: 8rem 2rem;
     text-align: center;
-    position: relative;
-    overflow: hidden;
   }
   
   .hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     animation: float 3s ease-in-out infinite;
   }
   
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    animation: float 3.5s ease-in-out infinite;
-  }
-  
-  .hero .btn {
-    background: var(--pastel-pink);
-    color: var(--text-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease, transform 0.3s ease;
-    animation: float 4s ease-in-out infinite;
-  }
-  
-  .hero .btn:hover {
-    background: var(--pastel-orange);
-    transform: scale(1.05);
-  }
-  
   @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
   
-  /* Project Cards with 3D Effect */
-  .project-card {
+  /* Reusable Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Card Component */
+  .card {
     background: white;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
   }
   
-  .project-card::before {
+  .card:hover {
+    transform: 
+      translateY(-10px) 
+      rotateX(5deg) 
+      rotateY(5deg);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.2),
+      0 0 0 2px var(--pastel-purple);
+  }
+  
+  .card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -142,74 +114,34 @@
     z-index: 1;
   }
   
-  .project-card:hover::before {
-    opacity: 0.2;
+  .card:hover::before {
+    opacity: 0.1;
   }
   
-  .project-card:hover {
-    transform: translateY(-10px) rotateX(10deg) rotateY(10deg);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  }
-  
-  .project-card img {
+  .card img {
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     transition: transform 0.3s ease;
   }
   
-  .project-card:hover img {
+  .card:hover img {
     transform: scale(1.05);
-  }
-  
-  .project-card h3 {
-    color: var(--pastel-purple);
-    margin-bottom: 10px;
-  }
-  
-  .project-card p {
-    color: var(--text-color);
   }
   
   /* Footer */
   footer {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
     background: var(--pastel-green);
-    color: var(--text-color);
-    margin-top: 40px;
-  }
-  
-  footer a {
-    color: var(--pastel-purple);
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
+    margin-top: 4rem;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
-  
-    .project-card {
-      flex: 1 1 100%;
-    }
-  
-    .navbar ul {
-      justify-content: center;
-    }
-  
-    .navbar ul li {
-      margin-left: 10px;
-    }
+    .hero h1 { font-size: 2rem; }
+    .grid { grid-template-columns: 1fr; }
+    .navbar ul { justify-content: center; }
   }

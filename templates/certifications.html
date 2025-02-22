@@ -19,15 +19,18 @@
                 <li><a href="education.html">🎓 Education</a></li>
             </ul>
         </div>
-
+        <div class = 'grid'>
         {% for cert in certifications %}
+            <div class = 'card'>
             <h2>{{ cert.name }}</h2>
             <p>Issued by: {{ cert.provider }}</p>
             <p><i>{{ cert.date }}</i></p>
             {% if cert.link %}
                 <p><a class="button" href="{{ cert.link }}" target="_blank">View Certificate</a></p>
             {% endif %}
+            </div>
         {% endfor %}
+        </div>
     </div>
 </body>
 </html>

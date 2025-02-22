@@ -19,12 +19,14 @@
                 <li><a href="education.html">🎓 Education</a></li>
             </ul>
         </div>
-
+        <div class = 'grid'>
         {% for edu in education %}
+            <div class = 'card'>
             <h2>{{ edu.degree }}</h2>
             <p><strong>{{ edu.institution }}</strong> ({{ edu.duration }})</p>
+            </div>
         {% endfor %}
-
+        </div>
     </div>
 </body>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>👾 Welcome to {{ name }}'s Portfolio</h1>
+        <h1>👾 Welcome to {{ name }}'s Portfolio 👾</h1>
 
         <div class="navbar">
             <ul>
@@ -19,13 +19,15 @@
             </ul>
         </div>     
         
-        <p>{{ bio }}</p>
+        <div class = 'grid'>
+            <p>{{ bio }}</p>
+        </div>
 
         <p><a class="button" href="{{github}}">Check My Work 🚀</a></p>
 
         <div class="footer">
             <p>📧 Contact: {{ email }}</p>
-            <p>🔗 <a href="{{ linkedin }}">LinkedIn</a></p>
+            <p><a href="{{ linkedin }}">LinkedIn</a> 🔗</p>
         </div>
     </div>
 </body>
