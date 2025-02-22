@@ -17,11 +17,12 @@
                 <li><a href="education.html">🎓 Education</a></li>
             </ul>
         </div>   
-        <div class = 'grid'>
         {% for job in experience %}
+        <div class = 'grid'>
+            <h2>{{job.company}} | <i>{{job.location}}</i></h2>
             {% for positions in job.positions %}
             <div class = 'card'>
-                <h2>{{ positions.title }} - {{ job.company }}</h2>
+                <h3>{{ positions.title }}</h3>
                 <p><i>{{ positions.duration }}</i></p>
                 <p>{{ positions.description }}</p>
 
@@ -37,8 +38,8 @@
                 <hr>
             </div>
             {% endfor %}
-        {% endfor %}
         </div>
+        {% endfor %}
     </div>
 </body>
 </html>
