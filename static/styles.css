@@ -173,3 +173,21 @@ form textarea {
   border-top: 2px solid #D4E6F1;
   font-size: 14px;
 }
+
+/* Project card styles */
+.project {
+    cursor: pointer;
+    grid-column: span 1;      /* By default, occupies one grid column */
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: white;  /* Ensure background matches your card */
+    border: 1px solid #D4E6F1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* When expanded, make it span the full grid width */
+  .project.expanded {
+    grid-column: 1 / -1;
+  }

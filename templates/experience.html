@@ -27,12 +27,14 @@
                 <p>{{ positions.description }}</p>
 
                 {% if positions.projects %}
+                    <div class = 'project'>
                     <h3>💾 Key Projects:</h3>
                     <ul>
                         {% for project in positions.projects %}
                             <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
                         {% endfor %}
                     </ul>
+                </div>
                 {% endif %}
 
                 <hr>
