@@ -6,7 +6,7 @@
     <title>Experience - Easha Fernandes</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
-<body> 
+<body>
     <div class="container">
         <h1>👔 Experience & Projects</h1>
         <div class="navbar">
@@ -27,13 +27,16 @@
                 <p></p>
 
                 
-                    <div class = 'project'>
+                    <div class = 'project' id = 'keyProjects'>
                     <h3>💾 Key Projects:</h3>
+                    <p>Click Here to expand.</p>
+                    <div class="hidden-content" style="display: none;">
                     <ul>
                         
                             <li><strong>Asset Liability Management (ALM)</strong>: Automated ALM reporting, replacing manual processes and improving data analysis.</li>
                         
                     </ul>
+                    </div>
                 </div>
                 
 
@@ -46,8 +49,10 @@
                 <p></p>
 
                 
-                    <div class = 'project'>
+                    <div class = 'project' id = 'keyProjects'>
                     <h3>💾 Key Projects:</h3>
+                    <p>Click Here to expand.</p>
+                    <div class="hidden-content" style="display: none;">
                     <ul>
                         
                             <li><strong>Amortization Module</strong>: Built a FastAPI endpoint for SLM amortization, reducing calculation time from minutes to seconds.</li>
@@ -61,6 +66,7 @@
                             <li><strong>Automated Testing</strong>: Researched and implemented PyTest and Mocha/Chai for an efficient and scalable test automation system.</li>
                         
                     </ul>
+                    </div>
                 </div>
                 
 
@@ -73,13 +79,16 @@
                 <p></p>
 
                 
-                    <div class = 'project'>
+                    <div class = 'project' id = 'keyProjects'>
                     <h3>💾 Key Projects:</h3>
+                    <p>Click Here to expand.</p>
+                    <div class="hidden-content" style="display: none;">
                     <ul>
                         
                             <li><strong>Cash Credit/Overdraft (CC/OD)</strong>: Automated CC/OD accruals and accounting, improving financial accuracy by 90%.</li>
                         
                     </ul>
+                    </div>
                 </div>
                 
 
@@ -89,5 +98,17 @@
         </div>
         
     </div>
+    <script>
+        const keyProjectsCard = document.getElementById('keyProjects');
+        keyProjectsCard.addEventListener('click', function() {
+          this.classList.toggle('expanded');
+          const hiddenContent = this.querySelector('.hidden-content');
+          if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+            hiddenContent.style.display = 'block';
+          } else {
+            hiddenContent.style.display = 'none';
+          }
+        });
+      </script> 
 </body>
 </html>

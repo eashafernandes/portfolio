@@ -6,7 +6,7 @@
     <title>Experience - {{ name }}</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
-<body> 
+<body>
     <div class="container">
         <h1>👔 Experience & Projects</h1>
         <div class="navbar">
@@ -27,13 +27,16 @@
                 <p>{{ positions.description }}</p>
 
                 {% if positions.projects %}
-                    <div class = 'project'>
+                    <div class = 'project' id = 'keyProjects'>
                     <h3>💾 Key Projects:</h3>
+                    <p>Click Here to expand.</p>
+                    <div class="hidden-content" style="display: none;">
                     <ul>
                         {% for project in positions.projects %}
                             <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
                         {% endfor %}
                     </ul>
+                    </div>
                 </div>
                 {% endif %}
 
@@ -43,5 +46,17 @@
         </div>
         {% endfor %}
     </div>
+    <script>
+        const keyProjectsCard = document.getElementById('keyProjects');
+        keyProjectsCard.addEventListener('click', function() {
+          this.classList.toggle('expanded');
+          const hiddenContent = this.querySelector('.hidden-content');
+          if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+            hiddenContent.style.display = 'block';
+          } else {
+            hiddenContent.style.display = 'none';
+          }
+        });
+      </script> 
 </body>
 </html>
