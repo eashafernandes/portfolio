@@ -1,83 +1,156 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #F7F9FC;
-    color: #34495E;
+/* Pastel Color Palette */
+:root {
+    --pastel-pink: #ffd1dc;
+    --pastel-blue: #a2d5f2;
+    --pastel-green: #b2f2bb;
+    --pastel-purple: #d4b9ff;
+    --pastel-yellow: #fff3b0;
+    --pastel-orange: #ffcc99;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --font-family: 'Inter', sans-serif;
+  }
+  
+  /* Import Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+  
+  /* General Styles */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-/* Navbar */
-.navbar {
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li {
-    margin: 0 20px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #5C6BC0;
-    font-size: 18px;
+  }
+  
+  h1, h2, h3 {
     font-weight: 600;
-    transition: 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #E57373;
-}
-
-/* Container */
-.container {
-    width: 80%;
-    margin: 60px auto; /* Increased margin to adjust for navbar */
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-}
-
-/* Headings */
-h1 {
-    color: #2C3E50;
-    border-bottom: 3px solid #5C6BC0;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #5C6BC0;
-    margin-top: 20px;
-}
-
-/* Fix for Hidden Text */
-h3, h4, p {
-    color: #2C3E50;
-}
-
-/* Links */
-a {
+    color: var(--text-color);
+  }
+  
+  a {
+    color: var(--pastel-purple);
     text-decoration: none;
-    color: #FFB6C1;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #E57373;
-}
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
+    color: var(--text-color);
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn {
+    background: var(--pastel-pink);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background: var(--pastel-orange);
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-card h3 {
+    color: var(--pastel-purple);
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    color: var(--text-color);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--pastel-green);
+    color: var(--text-color);
+    margin-top: 40px;
+  }
+  
+  footer a {
+    color: var(--pastel-purple);
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .project-card {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* Dark Mode (Optional) */
+  .dark-mode {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
+  
+  .dark-mode .hero {
+    background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-blue));
+  }
+  
+  .dark-mode .project-card {
+    background: #2d3748;
+    color: var(--background-color);
+  }
+  
+  .dark-mode footer {
+    background: var(--pastel-purple);
+    color: var(--background-color);
+  }
