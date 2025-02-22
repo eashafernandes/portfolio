@@ -1,147 +1,175 @@
-/* Pastel Color Palette */
-:root {
-    --pastel-pink: #ffd1dc;
-    --pastel-blue: #a2d5f2;
-    --pastel-green: #b2f2bb;
-    --pastel-purple: #d4b9ff;
-    --pastel-yellow: #fff3b0;
-    --pastel-orange: #ffcc99;
-    --background-color: #f8f9fa;
-    --text-color: #343a40;
-    --font-family: 'Inter', sans-serif;
-  }
-  
-  /* Google Font */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-  
-  /* Base Styles */
-  body {
-    font-family: var(--font-family);
-    background: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navbar */
-  .navbar {
-    background: var(--pastel-purple);
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ========================
+   Global & Base Styles
+======================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F9FC; /* Light pastel blue-gray */
+  color: #34495E;          /* Dark blue-gray for body text */
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================
+   Navbar Styles
+======================== */
+.navbar {
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-container {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #5C6BC0;  /* Soft pastel blue */
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #E57373;  /* Warm accent on hover */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
   .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
+    flex-direction: column;
   }
-  
-  .navbar a {
-    color: var(--text-color);
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color: var(--pastel-pink);
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
-    color: var(--text-color);
-    padding: 8rem 2rem;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-  
-  /* Reusable Grid */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  /* Card Component */
-  .card {
-    background: white;
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .card:hover {
-    transform: 
-      translateY(-10px) 
-      rotateX(5deg) 
-      rotateY(5deg);
-    box-shadow: 
-      0 20px 40px rgba(0, 0, 0, 0.2),
-      0 0 0 2px var(--pastel-purple);
-  }
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-  }
-  
-  .card:hover::before {
-    opacity: 0.1;
-  }
-  
-  .card img {
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover img {
-    transform: scale(1.05);
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 2rem;
-    background: var(--pastel-green);
-    margin-top: 4rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero h1 { font-size: 2rem; }
-    .grid { grid-template-columns: 1fr; }
-    .navbar ul { justify-content: center; }
-  }
+}
+
+/* ========================
+   Container & Content Styles
+======================== */
+.container {
+  width: 80%;
+  margin: 60px auto; /* Added top margin to avoid overlap with navbar */
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+h1 {
+  color: #2C3E50;  /* Deep modern blue-gray */
+  border-bottom: 3px solid #5C6BC0;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #5C6BC0;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #34495E;
+}
+
+a {
+  text-decoration: none;
+  color: #FFB6C1;  /* Pastel pink */
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #E57373;
+}
+
+/* ========================
+   Card Grid & Card Styles
+======================== */
+/* Grid container for cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Card Style */
+.card {
+  background-color: white;
+  border: 1px solid #D4E6F1;  /* Light pastel border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================
+   Form Styles (Contact Page)
+======================== */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #D4E6F1;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  background: #FFB6C1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #E57373;
+}
+
+/* ========================
+   Footer Styles
+======================== */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 2px solid #D4E6F1;
+  font-size: 14px;
+}
