@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --bg-color: #121212;
+    --text-color: #0ff; /* Neon Cyan */
+    --highlight-color: #ff0; /* Neon Yellow */
+    --font: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    border: 3px solid var(--highlight-color);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px var(--highlight-color);
+}
+
+h1, h2 {
+    color: var(--highlight-color);
+    text-shadow: 3px 3px 0px var(--text-color);
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.button {
+    display: inline-block;
+    background: var(--highlight-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - {{ name }}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Education</h1>
+
+        {% for edu in education %}
+            <h2>{{ edu.degree }}</h2>
+            <p><strong>{{ edu.institution }}</strong> ({{ edu.duration }})</p>
+        {% endfor %}
+
+        <div class="footer">
+            <p>
+                <a href="../index.html">🏠 Home</a> | 
+                <a href="experience.html">👔 Experience</a> | 
+                <a href="certifications.html">📜 Certifications</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

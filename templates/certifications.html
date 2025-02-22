@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - {{ name }}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Certifications</h1>
+
+        {% for cert in certifications %}
+            <h2>{{ cert.title }}</h2>
+            <p>Issued by: {{ cert.organization }}</p>
+            <p><i>{{ cert.date }}</i></p>
+            {% if cert.link %}
+                <p><a class="button" href="{{ cert.link }}" target="_blank">View Certificate</a></p>
+            {% endif %}
+        {% endfor %}
+
+        <div class="footer">
+            <p><a href="../index.html">🏠 Home</a> | <a href="experience.html">👔 Experience</a></p>
+        </div>
+    </div>
+</body>
+</html>

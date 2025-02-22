@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - {{ name }}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>👔 Experience & Projects</h1>
+
+        {% for job in experience %}
+            <h2>{{ job.title }} - {{ job.company }}</h2>
+            <p><i>{{ job.duration }}</i></p>
+            <p>{{ job.description }}</p>
+
+            {% if job.projects %}
+                <h3>💾 Key Projects:</h3>
+                <ul>
+                    {% for project in job.projects %}
+                        <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <hr>
+        {% endfor %}
+
+        <div class="footer">
+            <p><a href="../index.html">🏠 Home</a> | <a href="certifications.html">🎓 Certifications</a></p>
+        </div>
+    </div>
+</body>
+</html>
