@@ -20,20 +20,22 @@
         </div>   
 
         {% for job in experience %}
-            <h2>{{ job.positions.title }} - {{ job.company }}</h2>
-            <p><i>{{ job.positions.duration }}</i></p>
-            <p>{{ job.positions.description }}</p>
+            {% for positions in job.positions %}
+            <h2>{{ positions.title }} - {{ job.company }}</h2>
+            <p><i>{{ positions.duration }}</i></p>
+            <p>{{ positions.description }}</p>
 
-            {% if job.positions.projects %}
+            {% if positions.projects %}
                 <h3>💾 Key Projects:</h3>
                 <ul>
-                    {% for project in job.positions.projects %}
+                    {% for project in positions.projects %}
                         <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
                     {% endfor %}
                 </ul>
             {% endif %}
 
             <hr>
+            {% endfor %}
         {% endfor %}
     </div>
 </body>
