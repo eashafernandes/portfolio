@@ -1,0 +1,106 @@
+name: Easha Fernandes
+location: Borivali, Mumbai, India
+email: easha.ferns@gmail.com
+linkedin: www.linkedin.com/in/easha-fernandes
+github: https://github.com/eashafernandes/
+phone: '+91 9967268012'
+summary: |
+  Software Developer with 3 years of experience in building scalable software systems leveraging the power of Python and Node.js,
+  now diving into AI to build smart, high-performance solutions.
+
+skills:
+  languages_databases:
+    - Python: [FastAPI, Flask, Django, Pandas, Polars, QuantLib, Jupyter, PyTest, NumPy]
+    - JavaScript: [Node.js, Express, Mocha, Chai, JSON]
+    - SQL: [Oracle, MySQL]
+    - NoSQL: [MongoDB]
+  backend_system_architecture:
+    - Microservices
+    - RESTful APIs
+    - Load Balancing
+    - API Gateway
+    - Asynchronous Processing
+    - Event-Driven Architecture
+    - Message Brokers: [RabbitMQ]
+    - Web Servers: [NGINX]
+    - CI/CD Pipelines
+    - Cloud: [AWS EC2, AWS RDS, Linux, PuTTY]
+  devops_tools:
+    - Version Control: [Git, GitHub, GitLab]
+    - API Documentation & Testing: [Postman, JMeter]
+    - Monitoring: [Metabase]
+    - ERP Systems: [Frappe, ERPNext]
+    - Agile & Scrum: [Redmine, Taiga]
+  emerging_skills:
+    - Machine Learning & AI: [PyTorch, TensorFlow, OpenAI API, Scikit-Learn]
+    - Data Visualization: [Seaborn, Matplotlib, Tableau]
+    - Test Driven Development (TDD)
+    - Large Language Models (LLMs) & Generative AI
+    - Containerization & DevOps: [Docker, Kubernetes, GitHub CI/CD]
+    - Cloud Computing: [GCP]
+    - Front End: [React, Angular]
+
+experience:
+  - company: Credence Analytics
+    location: Mumbai, India
+    positions:
+      - title: Assistant Consultant – Software Backend Developer (SDE-2 Equivalent)
+        duration: Apr 2024 – Nov 2024
+        responsibilities:
+          - Led feature development and support for Cashtrea, a wealth management application, securing bank and NBFC sign-offs while enhancing security, usability, and performance.
+          - Mentored interns in API development, debugging, and workflows, accelerating their technical growth.
+          - Provided L1–L4 production support, acting as a primary contact for Cashtrea ensuring timely issue resolution.
+          - Conducted first-level code reviews and managed Git operations, ensuring smooth team collaboration.
+        projects:
+          - name: Asset Liability Management (ALM)
+            description: Automated ALM reporting, replacing manual processes and improving data analysis.
+      - title: Trainee Assistant Consultant – Software Backend Developer (SDE-1 Equivalent)
+        duration: Oct 2022 – Mar 2024
+        responsibilities:
+          - Transitioned from intern to full-time role after outstanding performance, taking charge of development and support.
+          - Developed and deployed key product enhancements, reducing client-reported issues by 70% and improving satisfaction rates.
+          - Consistently ranked among the top 5 developers for issue resolution and feature releases, contributing to product excellence.
+          - Managed patch releases to deliver timely bug fixes and feature enhancements.
+        projects:
+          - name: Amortization Module
+            description: Built a FastAPI endpoint for SLM amortization, reducing calculation time from minutes to seconds.
+          - name: NCD-Like Product Workflow
+            description: Streamlined NCD processing, boosting compliance, efficiency, and client satisfaction by 80%.
+          - name: Bulk Operations
+            description: An Express.js ecosystem that automates bulk transactions, enabling one-click execution of lengthy processes.
+          - name: CREDCLI Implementation
+            description: Integrated a Node.js CLI tool for seamless patching and updates in CashTrea, reducing server downtime by 50%.
+          - name: Automated Testing
+            description: Researched and implemented PyTest and Mocha/Chai for an efficient and scalable test automation system.
+      - title: Software Intern – Node.js and Python (SDE Intern Equivalent)
+        duration: Feb 2022 – Sept 2022
+        responsibilities:
+          - Trained in Git, Node.js, Python, and debugging, while resolving L1 & L2 production issues.
+          - Contributed to technical documentation, API development, and major module implementations.
+        projects:
+          - name: Cash Credit/Overdraft (CC/OD)
+            description: Automated CC/OD accruals and accounting, improving financial accuracy by 90%.
+
+certifications:
+  - name: Deloitte Australia – Technology Job Simulation Forage
+    date: Jan 2025
+  - name: International English Language Testing System (IELTS) – 7.5 Band Score
+    provider: IDP
+    date: Jan 2025
+  - name: Certified Node.js Backend Developer
+    provider: Credence Analytics
+    date: 2023
+  - name: Foundations: Data, Data, Everywhere
+    provider: Google
+    date: Jan 2022
+  - name: Intro to Machine Learning
+    provider: Kaggle
+    date: Apr 2021
+
+education:
+  - degree: Global Certificate in Data Science
+    institution: Accredian
+    duration: Aug 2020 – Oct 2021
+  - degree: Bachelor of Science (Computer Science)
+    institution: University of Mumbai
+    duration: Jul 2017 – Nov 2020
