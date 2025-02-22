@@ -19,8 +19,8 @@
         </div>   
         <div class = 'grid'>
         {% for job in experience %}
-            <div class = 'card'>
             {% for positions in job.positions %}
+            <div class = 'card'>
                 <h2>{{ positions.title }} - {{ job.company }}</h2>
                 <p><i>{{ positions.duration }}</i></p>
                 <p>{{ positions.description }}</p>
