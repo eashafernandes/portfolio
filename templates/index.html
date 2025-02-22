@@ -9,7 +9,6 @@
 <body>
     <div class="container">
         <h1>👾 Welcome to {{ name }}'s Portfolio</h1>
-        <p>{{ bio }}</p>
 
         <div class="navbar">
             <ul>
@@ -18,13 +17,15 @@
                 <li><a href="portfolio/certifications.html">📜 Certifications</a></li>
                 <li><a href="portfolio/education.html">🎓 Education</a></li>
             </ul>
-        </div>        
+        </div>     
+        
+        <p>{{ bio }}</p>
 
         <p><a class="button" href="{{github}}">Check My Work 🚀</a></p>
 
         <div class="footer">
             <p>📧 Contact: {{ email }}</p>
-            <p>🔗 <a href="{{ linkedin }}" target="_blank">LinkedIn</a></p>
+            <p>🔗 <a href="{{ linkedin }}">LinkedIn</a></p>
         </div>
     </div>
 </body>

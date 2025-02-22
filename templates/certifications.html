@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">🏠 Home</a></li>
-            <li><a href="experience.html">👔 Experience</a></li>
-            <li><a href="certifications.html">📜 Certifications</a></li>
-            <li><a href="education.html">🎓 Education</a></li>
-        </ul>
-    </div>
     
     <div class="container">
         <h1>🎓 Certifications</h1>
 
+        <div class="navbar">
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="experience.html">👔 Experience</a></li>
+                <li><a href="certifications.html">📜 Certifications</a></li>
+                <li><a href="education.html">🎓 Education</a></li>
+            </ul>
+        </div>
+
         {% for cert in certifications %}
-            <h2>{{ cert.title }}</h2>
-            <p>Issued by: {{ cert.organization }}</p>
+            <h2>{{ cert.name }}</h2>
+            <p>Issued by: {{ cert.provider }}</p>
             <p><i>{{ cert.date }}</i></p>
             {% if cert.link %}
                 <p><a class="button" href="{{ cert.link }}" target="_blank">View Certificate</a></p>

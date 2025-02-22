@@ -4,7 +4,7 @@ email: easha.ferns@gmail.com
 linkedin: www.linkedin.com/in/easha-fernandes
 github: https://github.com/eashafernandes/
 phone: '+91 9967268012'
-summary: |
+bio: |
   Software Developer with 3 years of experience in building scalable software systems leveraging the power of Python and Node.js,
   now diving into AI to build smart, high-performance solutions.
 
@@ -83,6 +83,7 @@ experience:
 
 certifications:
   - name: Deloitte Australia - Technology Job Simulation Forage
+    provider: Forage
     date: Jan 2025
   - name: International English Language Testing System (IELTS) - 7.5 Band Score
     provider: IDP

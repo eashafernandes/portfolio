@@ -6,27 +6,28 @@
     <title>Experience - {{ name }}</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">🏠 Home</a></li>
-            <li><a href="experience.html">👔 Experience</a></li>
-            <li><a href="certifications.html">📜 Certifications</a></li>
-            <li><a href="education.html">🎓 Education</a></li>
-        </ul>
-    </div>    
+<body> 
     <div class="container">
         <h1>👔 Experience & Projects</h1>
 
-        {% for job in experience %}
-            <h2>{{ job.title }} - {{ job.company }}</h2>
-            <p><i>{{ job.duration }}</i></p>
-            <p>{{ job.description }}</p>
+        <div class="navbar">
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="experience.html">👔 Experience</a></li>
+                <li><a href="certifications.html">📜 Certifications</a></li>
+                <li><a href="education.html">🎓 Education</a></li>
+            </ul>
+        </div>   
 
-            {% if job.projects %}
+        {% for job in experience %}
+            <h2>{{ job.positions.title }} - {{ job.company }}</h2>
+            <p><i>{{ job.positions.duration }}</i></p>
+            <p>{{ job.positions.description }}</p>
+
+            {% if job.positions.projects %}
                 <h3>💾 Key Projects:</h3>
                 <ul>
-                    {% for project in job.projects %}
+                    {% for project in job.positions.projects %}
                         <li><strong>{{ project.name }}</strong>: {{ project.description }}</li>
                     {% endfor %}
                 </ul>
