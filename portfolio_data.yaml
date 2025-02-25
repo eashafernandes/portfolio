@@ -4,9 +4,15 @@ email: easha.ferns@gmail.com
 linkedin: https://www.linkedin.com/in/easha-fernandes
 github: https://github.com/eashafernandes/
 phone: '+91 9967268012'
+form: https://formspree.io/f/xkgolpkn
 bio: |
-  Software Developer with 3 years of experience in building scalable software systems leveraging the power of Python and Node.js,
-  now diving into AI to build smart, high-performance solutions.
+  Hey there! I'm a Software Developer with 3 years of experience building scalable, high-performance software using Python and Node.js—basically, I tell computers what to do, and they <i>occasionally</i> listen. 😎
+  
+  Now, I'm venturing into the world of AI, learning how to make machines smarter (but not smart enough to replace me… yet). 😆
+  
+  Still experimenting, still exploring, but always ready to build something awesome. 🤖💡
+  
+  Let's connect and turn great ideas into reality—one line of code at a time! 🚀
 
 skills:
   languages_databases:
@@ -42,9 +48,12 @@ skills:
 
 experience:
   - company: Credence Analytics
+    about: Credence Analytics is global solution provider of mission-critical software solution and IT services which help automate processes in Banks, Asset Management Companies, Insurance Companies, Non-Banking Finance Companies and Corporate Finance Departments in the areas of Treasury, Investment Portfolio Management, Fund Administration, Investor Servicing and Risk Management.
+    role: My Role mainly involved Product Development, with a sprinkle of Application Support.
+    link: https://www.credenceanalytics.com/
     location: Mumbai, India
     positions:
-      - title: Assistant Consultant - Software Backend Developer (SDE-2 Equivalent)
+      - title: Assistant Consultant - Software
         duration: Apr 2024 - Nov 2024
         responsibilities:
           - Led feature development and support for Cashtrea, a wealth management application, securing bank and NBFC sign-offs while enhancing security, usability, and performance.
@@ -54,7 +63,7 @@ experience:
         projects:
           - name: Asset Liability Management (ALM)
             description: Automated ALM reporting, replacing manual processes and improving data analysis.
-      - title: Trainee Assistant Consultant - Software Backend Developer (SDE-1 Equivalent)
+      - title: Trainee Assistant Consultant - Software
         duration: Oct 2022 - Mar 2024
         responsibilities:
           - Transitioned from intern to full-time role after outstanding performance, taking charge of development and support.
@@ -72,7 +81,7 @@ experience:
             description: Integrated a Node.js CLI tool for seamless patching and updates in CashTrea, reducing server downtime by 50%.
           - name: Automated Testing
             description: Researched and implemented PyTest and Mocha/Chai for an efficient and scalable test automation system.
-      - title: Software Intern - Node.js and Python (SDE Intern Equivalent)
+      - title: Software Intern - Node.js and Python
         duration: Feb 2022 - Sept 2022
         responsibilities:
           - Trained in Git, Node.js, Python, and debugging, while resolving L1 & L2 production issues.

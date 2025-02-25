@@ -3,12 +3,12 @@ import os
 from jinja2 import Environment, FileSystemLoader
 
 # Load YAML data
-with open("portfolio_data.yaml", "r") as file:
+with open("portfolio_data.yaml", "r",encoding="utf-8") as file:
     data = yaml.safe_load(file)
 
 # Set up Jinja2 environment
 env = Environment(loader=FileSystemLoader("templates"))
-templates = ["index.html", "experience.html", "education.html", "certifications.html"]
+templates = ["index.html", "experience.html", "education.html", "certifications.html", "contactme.html"]
 
 # Ensure docs directory exists
 output_dir = "portfolio"

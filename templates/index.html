@@ -16,18 +16,16 @@
                 <li><a href="portfolio/experience.html">👔 Experience</a></li>
                 <li><a href="portfolio/certifications.html">📜 Certifications</a></li>
                 <li><a href="portfolio/education.html">🎓 Education</a></li>
+                <li><a href="portfolio/contactme.html">📧 Contact Me</a></li>
             </ul>
         </div>     
         
         <div class = 'grid'>
-            <p>{{ bio }}</p>
+            <p>{{ bio | replace("\n", "<br>") }}</p>
         </div>
 
-        <p><a class="button" href="{{github}}">Check My Work 🚀</a></p>
-
         <div class="footer">
-            <p>📧 Contact: {{ email }}</p>
-            <p><a href="{{ linkedin }}">LinkedIn</a> 🔗</p>
+            <p>📧 <a href="mailto:{{ email }}">Email</a> | 🔗 <a href="{{ linkedin }}">LinkedIn</a> | 💻 <a href="{{ github }}">Github</a></p>
         </div>
     </div>
 </body>
