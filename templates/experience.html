@@ -8,18 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>👔 Experience & Projects</h1>
+        <h1>👔 Experience</h1>
         <div class="navbar">
             <ul>
                 <li><a href="../index.html">🏠 Home</a></li>
                 <li><a href="experience.html">👔 Experience</a></li>
                 <li><a href="certifications.html">📜 Certifications</a></li>
                 <li><a href="education.html">🎓 Education</a></li>
+                <li><a href="contactme.html">📧 Contact Me</a></li>
             </ul>
         </div>   
         {% for job in experience %}
         <div class = 'grid'>
-            <h2>{{job.company}} | <i>{{job.location}}</i></h2>
+            <h2>{{job.company}} <br> <i>({{job.location}})</i> <br> <p><b>{{job.role}}</b></p></h2>
             {% for positions in job.positions %}
             <div class = 'card'>
                 <h3>{{ positions.title }}</h3>
@@ -43,6 +44,9 @@
             {% endfor %}
         </div>
         {% endfor %}
+        <div class="footer">
+            <p>📧 <a href="mailto:{{ email }}">Email</a> | 🔗 <a href="{{ linkedin }}">LinkedIn</a> | 💻 <a href="{{ github }}">Github</a></p>
+        </div>
     </div>
     <script>
         const keyProjectsCard = document.getElementById('keyProjects');
