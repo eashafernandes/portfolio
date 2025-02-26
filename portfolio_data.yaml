@@ -15,36 +15,36 @@ bio: |
   Let's connect and turn great ideas into reality—one line of code at a time! 🚀
 
 skills:
-  languages_databases:
-    - Python: [FastAPI, Flask, Django, Pandas, Polars, QuantLib, Jupyter, PyTest, NumPy]
-    - JavaScript: [Node.js, Express, Mocha, Chai, JSON]
-    - SQL: [Oracle, MySQL]
-    - NoSQL: [MongoDB]
-  backend_system_architecture:
+  Languages and Database:
+    - Python: "FastAPI, Flask, Django, Pandas, Polars, QuantLib, Jupyter, PyTest, NumPy"
+    - JavaScript: "Node.js, Express, Mocha, Chai, JSON"
+    - SQL: "Oracle, MySQL"
+    - NoSQL: "MongoDB"
+  System Architecture:
     - Microservices
     - RESTful APIs
     - Load Balancing
     - API Gateway
     - Asynchronous Processing
     - Event-Driven Architecture
-    - Message Brokers: [RabbitMQ]
-    - Web Servers: [NGINX]
+    - Message Brokers: "RabbitMQ"
+    - Web Servers: "NGINX"
     - CI/CD Pipelines
-    - Cloud: [AWS EC2, AWS RDS, Linux, PuTTY]
-  devops_tools:
-    - Version Control: [Git, GitHub, GitLab]
-    - API Documentation & Testing: [Postman, JMeter]
-    - Monitoring: [Metabase]
-    - ERP Systems: [Frappe, ERPNext]
-    - Agile & Scrum: [Redmine, Taiga]
-  emerging_skills:
-    - Machine Learning & AI: [PyTorch, TensorFlow, OpenAI API, Scikit-Learn]
-    - Data Visualization: [Seaborn, Matplotlib, Tableau]
+    - Cloud: "AWS EC2, AWS RDS, Linux, PuTTY"
+  Tools and Management:
+    - Version Control: "Git, GitHub, GitLab"
+    - API Documentation & Testing: "Postman, JMeter"
+    - Monitoring: "Metabase"
+    - ERP Systems: "Frappe, ERPNext"
+    - Agile & Scrum: "Redmine, Taiga"
+  Exploring:
+    - Machine Learning & AI: "PyTorch, TensorFlow, OpenAI API, Scikit-Learn"
+    - Data Visualization: "Seaborn, Matplotlib, Tableau"
     - Test Driven Development (TDD)
     - Large Language Models (LLMs) & Generative AI
-    - Containerization & DevOps: [Docker, Kubernetes, GitHub CI/CD]
-    - Cloud Computing: [GCP]
-    - Front End: [React, Angular]
+    - Containerization & DevOps: "Docker, Kubernetes, GitHub CI/CD"
+    - Cloud Computing: "GCP"
+    - Front End: "React, Angular"
 
 experience:
   - company: Credence Analytics
@@ -91,9 +91,14 @@ experience:
             description: Automated CC/OD accruals and accounting, improving financial accuracy by 90%.
 
 certifications:
+  - name: Practical GitHub Actions
+    provider: LinkedIn Learning
+    date: Feb 2025
+    link: https://www.linkedin.com/learning/certificates/a566127055652117b7c839f254765373dc8f5303e2233527d44cb0a0bda586bb
   - name: Deloitte Australia - Technology Job Simulation Forage
     provider: Forage
     date: Jan 2025
+    link: https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/YPWCiGNTkr6QxcpEu_9PBTqmSxAf6zZTseP_ou7rKByBp6oSyBimu_1736587364085_completion_certificate.pdf
   - name: International English Language Testing System (IELTS) - 7.5 Band Score
     provider: IDP
     date: Jan 2025

@@ -15,15 +15,16 @@
             <ul>
                 <li><a href="../index.html">🏠 Home</a></li>
                 <li><a href="experience.html">👔 Experience</a></li>
+                <li><a href="skills.html">⚡ Skills</a></li>
                 <li><a href="certifications.html">📜 Certifications</a></li>
                 <li><a href="education.html">🎓 Education</a></li>
                 <li><a href="contactme.html">📧 Contact Me</a></li>
             </ul>
-        </div>
+        </div> 
         <div class = 'grid'>
         {% for edu in education %}
             <div class = 'card'>
-            <h2>{{ edu.degree }}</h2>
+            <h3>{{ edu.degree }}</h3>
             <p><strong>{{ edu.institution }}</strong> ({{ edu.duration }})</p>
             </div>
         {% endfor %}

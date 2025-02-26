@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👔 Skills</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="../index.html">🏠 Home</a></li>
+                <li><a href="experience.html">👔 Experience</a></li>
+                <li><a href="skills.html">⚡ Skills</a></li>
+                <li><a href="certifications.html">📜 Certifications</a></li>
+                <li><a href="education.html">🎓 Education</a></li>
+                <li><a href="contactme.html">📧 Contact Me</a></li>
+            </ul>
+        </div>  
+    {% for category, skills in skills.items() %}
+      <div class="skill-category">
+        <h3>{{ category.title() }}</h3>
+        <div class="skills-grid">
+          {% for skill in skills %}
+            <div class="skill-card">
+              {% if skill is mapping %}
+                {% for main_skill, sub_skills in skill.items() %}
+                  <div class="skill">
+                    <span class="main-skill">{{ main_skill }}</span>
+                    <div class="subskills">
+                        <span class="subskill">{{ sub_skills }}</span>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% else %}
+                <div class="skill">{{ skill }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+    <div class="footer">
+      <p>📧 <a href="mailto:{{ email }}">Email</a> | 🔗 <a href="{{ linkedin }}">LinkedIn</a> | 💻 <a href="{{ github }}">Github</a></p>
+  </div>
+  </div>
+    <!-- <script>
+      function showSubskills(element) {
+        let subskills = element.querySelector('.subskills');
+        if (subskills) {
+          subskills.style.opacity = '1';
+          subskills.style.visibility = 'visible';
+        }
+      }
+
+      function hideSubskills(element) {
+        let subskills = element.querySelector('.subskills');
+        if (subskills) {
+          subskills.style.opacity = '0';
+          subskills.style.visibility = 'hidden';
+        }
+      }
+      function toggleSubskills(element) {
+          element.classList.toggle("active");
+      }
+    </script> -->
+</body>
+</html>
